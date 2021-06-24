@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <div class="header">
+            <h1>ToDo App</h1>
+        </div>
+        <form class="container" v-on:submit.prevent>
+            <h3>New Task</h3>
+            <input class="field" type="text" v-model="valueInput">
+            <button class="field button" @click="addTask">Add Task</button>
+        </form>
+        <div>
+            <h3 class="line">ToDo List</h3>
+            <ul class="taskItems">
+                <li class="taskItem" v-for="(task, index) in needDoList" :key="task.title">
+                    <span class="toDoItem">{{ task.title }}</span>
+                    <button class="doneButton" @click="completeTask(index)">Done</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

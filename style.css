@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+}
+body {
+    background:#27292d;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: 1% 30%;
+}
+
+button:hover {
+    background: gold;
+    border: gold;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    height: 48px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    padding-left: 10px;
+}
+
+.button {
+    height: 48px;
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000
+}
+
+.line::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.taskItems {
+    list-style-type: none;
+}
+
+.toDoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    width: 80%;
+}
+
+.taskItem {
+    display: flex; 
+}
+
+.doneButton {
+    background-color: #fff;
+    margin-bottom: 12px;
+    width: 20%;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    margin-left: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
